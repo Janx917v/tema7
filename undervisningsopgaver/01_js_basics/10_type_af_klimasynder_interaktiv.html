@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <p>Antal timer du rejser i fly:</p>
+    <input type="text" id="timer">
+    <p>1 time = 109 kg CO2 udledt</p>
+    <button>Klik og se hvor styg du er!</button>
+
+    <script>
+        document.querySelector("button").addEventListener("click", buttonClicked);
+
+        function buttonClicked() {
+            let timer = document.querySelector("#timer").value;
+            let kilo = 109;
+            let co2UdledtIKgVedFlyrejse = kiloTotalt(timer, kilo);
+
+            let resultat;
+
+            if (isNaN(co2UdledtIKgVedFlyrejse)) {
+                resultat = "Det er ikke et tal - prøv igen!";
+            } else if (co2UdledtIKgVedFlyrejse < 100) {
+                resultat = `Ved ${timer} timers flyrejse har du udledt ${kiloTotalt(timer, kilo)} kg CO2. Tæt på Thunberg.`;
+            } else if (co2UdledtIKgVedFlyrejse >= 100 && co2UdledtIKgVedFlyrejse < 200) {
+                resultat = `Ved ${timer} timers flyrejse har du udledt ${kiloTotalt(timer, kilo)} kg CO2. Ja ja, du behøver ikke melde dig ud af Å!`;
+            } else if (co2UdledtIKgVedFlyrejse >= 200 && co2UdledtIKgVedFlyrejse < 600) {
+                resultat = `Ved ${timer} timers flyrejse har du udledt ${kiloTotalt(timer, kilo)} kg CO2. Det er godt for turismen i Noreuropa`;
+            } else {
+                resultat = `Ved ${timer} timers flyrejse har du udledt ${kiloTotalt(timer, kilo)} kg CO2. Nå ja vi kan jo altid kolonisere en anden planet....`;
+            }
+
+            console.log(resultat);
+
+        }
+
+        function kiloTotalt(t, k) {
+            return t * k;
+        }
+
+        /*   if (co2UdledtIKgVedFlyrejse < 100) {
+            resultat = `Ved ${timer} timers flyrejse har du udledt ${co2UdledtIKgVedFlyrejse} kg CO2. Tæt på Thunberg.`;
+        } else if (co2UdledtIKgVedFlyrejse >= 100 && co2UdledtIKgVedFlyrejse < 200) {
+            resultat = `Ved ${timer} timers flyrejse har du udledt ${co2UdledtIKgVedFlyrejse} kg CO2. Ja ja, du behøver ikke melde dig ud af Å!`;
+        } else if (co2UdledtIKgVedFlyrejse >= 200 && co2UdledtIKgVedFlyrejse < 600) {
+            resultat = `Ved ${timer} timers flyrejse har du udledt ${co2UdledtIKgVedFlyrejse} kg CO2. Det er godt for turismen i Noreuropa`;
+        } else {
+            resultat = `Ved ${timer} timers flyrejse har du udledt ${co2UdledtIKgVedFlyrejse} kg CO2. Nå ja vi kan jo altid kolonisere en anden planet....`;
+        }
+
+        console.log(resultat);*/
+
+        /*  if (isNaN(a)) {
+              resultat = ("Det er ikke et tal - prøv igen");*/
+
+        /*document.querySelector("button").addEventListener("click", buttonClicked);
+
+        function buttonClicked() {
+            let længde = document.querySelector("#længde").value;
+            let bredde = document.querySelector("#bredde").value;
+            let areal = længde * bredde;
+            let resultat = `Længden er ${længde} meter og bredden er ${bredde} meter. Arealet er ${areal} kvm`;
+            console.log(resultat);
+        }
+        */
+
+        /*document.querySelector("button").addEventListener("click", buttonClicked);
+
+        function buttonClicked() {
+            let brugerNavn = document.querySelector("#navn").value;
+            console.log(`Tillykke dit navn er ${brugerNavn}`);*/
+
+        /*    let resultat;
+
+              if (areal < 100) {
+                  resultat = "Arealet er for lille";
+
+              } else if (areal < 200) {
+                  resultat = "Arealet er ok";
+
+              } else {
+                  resultat = "Arealet er for stort";
+              }*/
+
+        /* let længde = 12;
+        let bredde = 24;
+        let areal = længde * bredde;
+        let resultat = `Længden er ${længde} meter og bredden er ${bredde} meter. Arealet er ${areal} kvm`;
+        console.log(resultat);*/
+    </script>
+</body></html>
+
+
+<!-- Her benyttes et inputfelt til at angive værdien for antal timers som flyrejsen har varet. Ved hjælp af JS gøres knappen aktiv og ved klik på knappen aktiveres functionen som først læser variablen for den indskrevne værdi og udskriver den i tal og herefter har vi defineret den variabel som kilo pr time har (109). Herefter angiver vi en variabel på det samlede antal kg CO2 udledt på rejsen (kiloTotalt(timer, kilo)) . For at finde frem til resultatet for dette, har vi oprettet en ny function med kiloTotalt, hvor vi ganger t (timer) med k (kilo) og beder functionen om at returnere resultatet igen.
+Herefter har vi brugt IF / ELSE IF / ELSE til at sætte regler for hvornår de forskellige beskeder skal udskrives i konsollen. Først har vi benyttet en IF til at læse om der er indtastet tal eller bogstaver/tegn - til at gøre dette har vi benyttet isNaN på på den variabel som gælder for det samlede antal kilo (co2UdledtIKgVedFlyrejse). Hvis det ikke er et tal, vil man få beskeden herom og blive bedt om at prøve igen. Herefter har vi indskrevet ELSE IF regler for de forskellige værdier vi ønsker at der skal læses på og bedt udskrive i consollen for den specifikke ramte værdi. Slutteligt er der benyttet en ELSE regler med consol-besked til alle resultater der ligger over vores hæjest definerede værdi.-->
+
+
+
+
+
+
+
+
+
