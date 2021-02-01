@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <script>
+        let timer = 15;
+        let kilo = 109;
+        //let resultat = timer * kilo;
+        let co2UdledtIKgVedFlyrejse = timer * kilo;
+        //let resultat = `Ved ${timer} timers flyrejse har du udledt ${co2UdledtIKgVedFlyrejse} kg CO2`;
+
+        if (co2UdledtIKgVedFlyrejse < 100) {
+            resultat = `Ved ${timer} timers flyrejse har du udledt ${co2UdledtIKgVedFlyrejse} kg CO2. Tæt på Thunberg.`;
+        } else if (co2UdledtIKgVedFlyrejse >= 100 && co2UdledtIKgVedFlyrejse < 200) {
+            resultat = `Ved ${timer} timers flyrejse har du udledt ${co2UdledtIKgVedFlyrejse} kg CO2. Ja ja, du behøver ikke melde dig ud af Å!`;
+        } else if (co2UdledtIKgVedFlyrejse >= 200 && co2UdledtIKgVedFlyrejse < 600) {
+            resultat = `Ved ${timer} timers flyrejse har du udledt ${co2UdledtIKgVedFlyrejse} kg CO2. Det er godt for turismen i Noreuropa`;
+        } else {
+            resultat = `Ved ${timer} timers flyrejse har du udledt ${co2UdledtIKgVedFlyrejse} kg CO2. Nå ja vi kan jo altid kolonisere en anden planet....`;
+        }
+
+        console.log(resultat);
+
+
+
+
+        /*    let resultat;
+
+              if (areal < 100) {
+                  resultat = "Arealet er for lille";
+
+              } else if (areal < 200) {
+                  resultat = "Arealet er ok";
+
+              } else {
+                  resultat = "Arealet er for stort";
+              }*/
+
+        /* let længde = 12;
+        let bredde = 24;
+        let areal = længde * bredde;
+        let resultat = `Længden er ${længde} meter og bredden er ${bredde} meter. Arealet er ${areal} kvm`;
+        console.log(resultat);*/
+    </script>
+</body></html>
+
+
+
+<!-- LET TIMER angives med værdi her i JS og i LET co2UdledtIKgVedFlyrejse angives at indtastede antal timer skal ganges med 109 (kg i timen).
+Resultatet udskrives i konsollen med en string, hvor der benyttes $ til at trække data fra hhv. LET TIMER og LET co2UdledtIKgVedFlyrejse-->
