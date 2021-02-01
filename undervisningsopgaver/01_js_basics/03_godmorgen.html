@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+
+    <script>
+        let time = new Date().getHours();
+        let hilsen;
+
+        if (time >= 5 && time < 10) {
+            hilsen = "Godmorgen";
+        } else if (time >= 10 && time < 18) {
+            hilsen = "Goddag";
+        } else if (time >= 18 && time < 24) {
+            hilsen = "Godaften";
+        } else {
+            hilsen = "Godnat";
+        }
+
+        console.log(hilsen);
+    </script>
+</body></html>
+
+
+<!-- Oprette en knap og gøre den klikbar via JS + udskrive en besked i consollen ved klik på knap. I eksemplet oprettes input-felt og knap i HTML og i JS gøres knappen klikbar og consollen angives til at udskrive tekst, incl det navn der angives i tekstfeltet på websiden. -->
