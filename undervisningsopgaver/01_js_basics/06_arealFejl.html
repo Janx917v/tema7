@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <p>Hvad er længden?</p>
+    <input type="text" id="længde">
+    <p>Hvad er bredden?</p>
+    <input type="text" id="bredde">
+    <button>Klik og beregn arealet, kig i konsollen</button>
+
+
+    <script>
+        document.querySelector("button").addEventListener("click", buttonClicked);
+
+        function buttonClicked() {
+            let længde = document.querySelector("#længde").value;
+            let bredde = document.querySelector("#bredde").value;
+            let a = areal(længde, bredde);
+            let resultat;
+            if (isNaN(a)) {
+                resultat = ("Det er ikke et tal - prøv igen");
+            } else if (a <= 0) {
+                resultat = "Arealet er mindre end 0 - prøv igen"
+            } else {
+                resultat = `Arealet er ${a}`;
+            }
+
+            console.log(resultat);
+        }
+
+        function areal(l, b) {
+            return l * b;
+        }
+    </script>
+</body></html>
+
+
+<!-- Her er der brugt IF / ELSE IF / ELSE til at oplyse om de forskellige input der kan gives.
+Hvis der indskrives andet end tal i input-felterne, så angiver IF at resultatet er NaN (Not a Number) og udskriver resultatet Det er ikke et tal - prøv igen.
+Hvis der indskrives et 0 i enten længde eller bredde, så træder ELSE IF i kraft, da IF regler ikke træder i kraft og her har vi defineret at hvis arealet er mindre end 0, så udskrives resultat: Arealet er mindre end 0 - prøv igen.
+Hvis begge inputfelter udfyldes med tal, så træder hverken IF eller ELSE IF i kraft, men den går videre til ELSE og udregner resultatet af arealet og udskriver resultat: Arealet er ${a}. (A) er defineret i functionen + LET A.-->
