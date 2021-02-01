@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <script>
+        let længde = 12;
+        let bredde = 20;
+        let areal = længde * bredde;
+        let resultat;
+
+        if (areal < 100) {
+            resultat = "Arealet er for lille";
+
+        } else if (areal < 200) {
+            resultat = "Arealet er ok";
+
+        } else {
+            resultat = "Arealet er for stort";
+        }
+
+        console.log(resultat);
+    </script>
+</body></html>
+
+
+<!--
+Ved længde 12 * bredde 2 er resultatet: Arealet er for lille, da første IF regel bliver opfyldt ved at resultatet er under 100.
+Ved længde 12 * bredde 10 er resultatet: Arealet er ok, da første IF regel ikke er opfyldt og derfor indtræder ELSE IF reglen, da resultatet ligger mellem 100 og 200.
+Ved længde 12 * bredde 20 er resultatet: Arealet er for stort, da hverken IF eller ELSE IF reglerne bliver opfyldt og derfor indtræder ELSE reglen, da resultatet er større end 200 -->
