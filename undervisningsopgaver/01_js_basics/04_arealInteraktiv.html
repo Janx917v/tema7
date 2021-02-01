@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <p>Hvad er længden?</p>
+    <input type="text" id="længde">
+    <p>Hvad er bredden?</p>
+    <input type="text" id="bredde">
+    <button>Klik og beregn arealet, kig i konsollen</button>
+
+
+    <script>
+        document.querySelector("button").addEventListener("click", buttonClicked);
+
+        function buttonClicked() {
+            let længde = document.querySelector("#længde").value;
+            let bredde = document.querySelector("#bredde").value;
+            let areal = længde * bredde;
+            let resultat = `Længden er ${længde} meter og bredden er ${bredde} meter. Arealet er ${areal} kvm`;
+            console.log(resultat);
+        }
+
+        /*let længde = 12;
+        let bredde = 24;
+        let areal = længde * bredde;
+        let resultat = `Længden er ${længde} meter og bredden er ${bredde} meter. Arealet er ${areal} kvm`;
+        console.log(resultat);*/
+    </script>
+</body></html>
+
+
+<!-- Ved at indskrive længde/bredde/areal med $ i resultat string, så udskriver den tal/udregninger fra de definerede variabler.
+Til forskel fra den første opgave med areal (det der er udkommenteret), så er der her angivet input-felter i HTML'en, hvor vi kan angive længde og bredde. Disse inputfelter har hver fået et ID (#), som vi refererer til i JS. Efter de to input-felter har vi lavet en knap, som først gøres klikbar i JS.
+I FUNCTIONEN i JS har vi angivet at den variable længde og bredde bliver angivet af de tal som indskrives i inputfelterne, i modsætning til 1. opgave hvor vi angav værdierne direkte i JS.
+Vi har beholdt at arealet stadig er længde * bredde og resultatet er forsat samme string (tekst) hvor vi bruger $ til at udskrive de værdier der bliver angivet i LÆNGDE, BREDDE & AREAL.
+.VALUE benyttes til at udskrive værdien af det tilknyttede element-->
