@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jans side</title>
+    <link rel="stylesheet" href="css_struktur.css">
+</head>
+<header>
+    <h1>Titel</h1>
+</header>
+
+<body>
+    <main>
+        <h2>Undertitel</h2>
+        <section>
+            <article>
+                <img src="https://placeimg.com/640/480/any/grayscale" alt="grayscale" class="first">
+                <h3>Article 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est tempore obcaecati, fugit possimus commodi, nihil assumenda esse ratione excepturi impedit dolores unde modi reprehenderit optio quidem, delectus non dignissimos porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, natus blanditiis officia quia nesciunt ut incidunt distinctio tempore excepturi autem a iste minus quas voluptatum, illum qui, repellat eligendi aperiam!</p>
+            </article>
+            <article>
+                <img src="https://placeimg.com/640/480/any/sepia" alt="sepia">
+                <h3>Article 2</h3>
+                <p>HEST - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quam soluta eligendi molestias eaque autem consectetur, sunt quae nemo omnis. Sunt molestiae odit cupiditate facere, saepe laboriosam mollitia necessitatibus tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto consequuntur tempore dolorem ex a velit veniam, accusantium quaerat, molestias, nesciunt tempora voluptas deleniti voluptatum amet illo, recusandae! Nulla inventore, magni.</p>
+            </article>
+        </section>
+    </main>
+    <footer>Fang mig på SoME... or not!</footer>
+
+    <script>
+        const overskrift = document.querySelector("h1");
+        overskrift.textContent;
+        //overskrift.textContent = "Ugle";
+        console.log(overskrift.textContent);
+
+        const undertitel = document.querySelector("h2");
+        undertitel.textContent;
+        //undertitel.textContent = "Pingvin";
+        console.log(undertitel.textContent);
+
+        const img = document.querySelector("img:nth-child(1)");
+        img.alt;
+        console.log(img.alt);
+
+        const article = document.querySelector("article:nth-child(1) h3");
+        article.textContent;
+        console.log(article.textContent);
+
+        const article1 = document.querySelector("article:nth-child(1) p");
+        article1.textContent;
+        //article1.textContent = "Her er et billede i gråtoner";
+        console.log(article1.textContent);
+
+        /*const img1 = document.querySelector("img:nth-child(2)");
+        img1.alt;
+        console.log(img1.alt);*/
+
+        const article2 = document.querySelector("article:nth-child(2) h3");
+        article2.textContent;
+        //article2.textContent = "Næbdyr";
+        console.log(article2.textContent);
+
+        const article4 = document.querySelector("article:nth-child(2) p");
+        article4.textContent;
+        //article1.textContent = "Her er et billede i gråtoner";
+        console.log(article4.textContent);
+
+
+        /*   const article = document.querySelector("h3");
+                article.textContent = "Murmeldyr";
+                article.textContent = "Søhest";
+                console.log(article.textContent);*/
+
+        /*   const titel = document.querySelector("header");
+           console.log(titel);
+
+           //textContent - så er det ren uformateret indhold man sætter ind
+           titel.textContent = "Billedegalleri";
+
+           //innerHTML -  så indsætter man specifikt og pre-stylet, som fx H1
+           titel.innerHTML = "<h1>Billedegalleri</h1>";
+
+           //Tilføjer og overskriver evt. tekst i alt-tributten på det første billede
+           const pic1 = document.querySelector("article:first-child img");
+           console.log(pic1);
+           pic1.alt = "Billede i gråtoner";*/
+    </script>
+</body></html>
