@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <article id=dyr>
+        <h3></h3>
+        <p></p>
+        <img src="" alt="">
+    </article>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", start);
+        console.log("DOM er loaded");
+
+
+        function start() {
+
+            const destination = document.querySelector("#dyr");
+
+            let dyr = {
+                "navn": "Gris",
+                "type": "Pattedyr",
+                "billede": "http://mabe-kea.dk/E19/pics/pig.png",
+                "levested": "Svinefarme"
+            }
+
+            destination.querySelector("h3").textContent = "Gris";
+            destination.querySelector("p").textContent = `Type: ${dyr.type} & Levested: ${dyr.levested}`;
+            destination.querySelector("img").src = "http://mabe-kea.dk/E19/pics/pig.png";
+
+
+
+            //article.textContent = `Navn: ${dyr.navn}. Type: ${dyr.type}. Levested: ${dyr.levested}`;
+            //article.src = "http://mabe-kea.dk/E19/pics/pig.png";
+
+            //let newPic = document.createElement("img");
+            //newPic.src = "http://mabe-kea.dk/E19/pics/pig.png";
+            //article.appendChild(newPic);
+
+            /*document.querySelector("article").textContent = `Navn: ${dyr.navn}. Type: ${dyr.type}. Levested: ${dyr.levested}`;*/
+
+
+            console.log(dyr);
+            console.log(`Navn: ${dyr.navn}. Type: ${dyr.type}. Levested: ${dyr.levested}`);
+        }
+
+    </script>
+</body>
+
+</html>
