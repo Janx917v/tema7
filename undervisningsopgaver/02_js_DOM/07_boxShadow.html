@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jans side</title>
+    <link rel="stylesheet" href="css_struktur.css">
+</head>
+<header>
+    <h1>Titel</h1>
+</header>
+
+<body>
+    <main>
+        <h2>Undertitel</h2>
+        <section>
+            <article>
+                <img src="https://placeimg.com/640/480/any/grayscale" alt="grayscale" class="first">
+                <h3>Article 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est tempore obcaecati, fugit possimus commodi, nihil assumenda esse ratione excepturi impedit dolores unde modi reprehenderit optio quidem, delectus non dignissimos porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, natus blanditiis officia quia nesciunt ut incidunt distinctio tempore excepturi autem a iste minus quas voluptatum, illum qui, repellat eligendi aperiam!</p>
+            </article>
+            <article>
+                <img src="https://placeimg.com/640/480/any/sepia" alt="sepia">
+                <h3>Article 2</h3>
+                <p>HEST - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quam soluta eligendi molestias eaque autem consectetur, sunt quae nemo omnis. Sunt molestiae odit cupiditate facere, saepe laboriosam mollitia necessitatibus tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto consequuntur tempore dolorem ex a velit veniam, accusantium quaerat, molestias, nesciunt tempora voluptas deleniti voluptatum amet illo, recusandae! Nulla inventore, magni.</p>
+            </article>
+        </section>
+    </main>
+    <footer>Footer</footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", start);
+        console.log("DOM er loaded");
+
+        document.querySelector(".first").addEventListener("click", clicked);
+
+        const htmlElement = document.querySelector("article");
+        htmlElement.style.boxShadow = "0px 1px 101px 16px rgba(210,180,74,0.53)";
+        console.log("htmlElement");
+
+
+        /*const htmlElement2 = document.querySelector("#A2");
+        htmlElement2.style.boxShadow = "0px 1px 101px 16px rgba(74,210,203,0.53)";
+        console.log("htmlElement2");
+
+
+        const htmlElement3 = document.querySelector("article");
+        htmlElement3.style.boxShadow = "0px 1px 101px 16px rgba(92,210,74,0.53)";
+        console.log("htmlElement3");*/
+
+
+
+        function clicked() {
+            console.log("billedeclick");
+            const pic1 = document.querySelector("article:nth-child(1) img");
+            const tilfaeldigtTal = Math.round(Math.random() * 10);
+
+            pic1.src = "https://placeimg.com/640/480/animals/sepia" + tilfaeldigtTal;
+        }
+
+
+        function start() {
+            //Tager fat i section i HTML
+            let mainSection = document.querySelector("section");
+
+            //Nyt article element
+            let newArticle = document.createElement("article");
+
+            //Nyt img element
+            let newPic = document.createElement("img");
+
+            //Nyt H# element
+            let overskriftH3 = document.createElement("h3");
+
+            //Tekst til overskriften
+            let overskriftText = document.createTextNode("Artikel 3");
+
+            //Nyt P element
+            let tekstArtikel = document.createElement("p");
+
+            //Tekst til p element
+            let tekstArtikelIndhold = document.createTextNode("Her er alle mine billeder af forskellige dyr");
+
+
+            //Herunder tilføjes alle til selve siden
+
+            //Billede til img element
+            newPic.src = "https://placeimg.com/640/480/animals"
+
+            //Indsæt tekst i overskrift
+            overskriftH3.appendChild(overskriftText);
+
+            //Indsæt tekst i P
+            tekstArtikel.appendChild(tekstArtikelIndhold);
+
+            //Tilføj newPic til article
+            newArticle.appendChild(newPic);
+
+            //Tilføj overskrift til article
+            newArticle.appendChild(overskriftH3);
+
+            //Tilføj P til article
+            newArticle.appendChild(tekstArtikel);
+
+            //Tilføj article til section
+            mainSection.appendChild(newArticle);
+
+
+            const pic1 = document.querySelector("article:nth-child(1) img");
+            const pic2 = document.querySelector("article:nth-child(2) img");
+            console.log(pic1);
+            console.log(pic2);
+
+            //src attribut ændret til nyt billede
+            pic1.src = "https://placeimg.com/640/480/arch";
+            pic2.src = "https://placeimg.com/640/480/tech";
+            //pic3.src = "https://placeimg.com/640/480/animals";
+
+
+            //alt attribut ændret fra grayscale/sepia
+            pic1.alt = "Architecture";
+            pic2.alt = "Technic";
+            //pic3.alt = "Animals";
+
+
+            //Alt herunder hører til opgave 2_indhold - opdateret med info/tekst til denne opgave 03_indhold
+            const overskrift = document.querySelector("h1");
+            //overskrift.textContent;
+            overskrift.textContent = "Jan's Galleri";
+            console.log(overskrift.textContent);
+
+            const undertitel = document.querySelector("h2");
+            //undertitel.textContent;
+            undertitel.textContent = "Udvalg af fotostile";
+            console.log(undertitel.textContent);
+
+            const article = document.querySelector("article:nth-child(1) h3");
+            article.textContent = "Arkitektur";
+            console.log(article.textContent);
+
+            const article1 = document.querySelector("article:nth-child(1) p");
+            //article1.textContent;
+            article1.textContent = "Her er et billede arkitektur, som er gennemgående for den ene af mine foto stilarter";
+            console.log(article1.textContent);
+
+            const article2 = document.querySelector("article:nth-child(2) h3");
+            //article2.textContent;
+            article2.textContent = "Teknik";
+            console.log(article2.textContent);
+
+            const article3 = document.querySelector("article:nth-child(2) p");
+            //article3.textContent;
+            article3.textContent = "Her er et billede af teknik, som er gennemgående for den anden af mine foto stilarter";
+            console.log(article3.textContent);
+
+            const footer = document.querySelector("footer");
+            //article3.textContent;
+            footer.textContent = "Fang mig på SoME... or not!";
+            console.log(footer.textContent);
+        }
+
+        /*   const article = document.querySelector("h3");
+                article.textContent = "Murmeldyr";
+                article.textContent = "Søhest";
+                console.log(article.textContent);*/
+
+        /*   const titel = document.querySelector("header");
+           console.log(titel);
+
+           //textContent - så er det ren uformateret indhold man sætter ind
+           titel.textContent = "Billedegalleri";
+
+           //innerHTML -  så indsætter man specifikt og pre-stylet, som fx H1
+           titel.innerHTML = "<h1>Billedegalleri</h1>";
+
+           //Tilføjer og overskriver evt. tekst i alt-tributten på det første billede
+           const pic1 = document.querySelector("article:first-child img");
+           console.log(pic1);
+           pic1.alt = "Billede i gråtoner";*/
+
+    </script>
+</body>
+
+</html>
