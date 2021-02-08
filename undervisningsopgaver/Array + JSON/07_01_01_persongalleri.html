@@ -49,7 +49,6 @@
         p {
             text-align: center
         }
-
     </style>
 </head>
 
@@ -103,13 +102,17 @@
                     klon.querySelector(".navn").textContent = person.fornavn + " " + person.efternavn;;
                     klon.querySelector(".titel").textContent = person.titel;
                     klon.querySelector(".fødselsdag").textContent = person.fødselsdag;
+
+                    const string = person.fødselsdag; // f.eks. 2011-06-07T00:00:00.000Z
+                    const pattern = /[0-9][0-9][0-9][0-9][-][0-9][0-9][-][0-9][0-9]/; // mønster: XXXX-XX-XX
+                    const result = string.match(pattern); // find den del af string der matcher mønster (pattern)
+                    klon.querySelector(".fødselsdag").textContent = result; // indsæt teksten i klonen
+
                     main.appendChild(klon);
+
                 }
 
             )
         }
-
     </script>
-</body>
-
-</html>
+</body></html>
