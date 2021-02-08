@@ -49,6 +49,7 @@
         p {
             text-align: center
         }
+
     </style>
 </head>
 
@@ -99,7 +100,7 @@
             json.forEach(person => {
                     const klon = template.cloneNode(true);
                     klon.querySelector(".billede").src = medieurl + person.billede;
-                    klon.querySelector(".navn").textContent = person.fornavn;
+                    klon.querySelector(".navn").textContent = person.fornavn + " " + person.efternavn;;
                     klon.querySelector(".titel").textContent = person.titel;
                     klon.querySelector(".fødselsdag").textContent = person.fødselsdag;
                     main.appendChild(klon);
@@ -107,5 +108,8 @@
 
             )
         }
+
     </script>
-</body></html>
+</body>
+
+</html>
