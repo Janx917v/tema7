@@ -99,7 +99,7 @@
             json.forEach(person => {
                     const klon = template.cloneNode(true);
                     klon.querySelector(".billede").src = medieurl + person.billede;
-                    klon.querySelector(".navn").textContent = person.fornavn + " " + person.efternavn;;
+                    klon.querySelector(".navn").textContent = person.fornavn + " " + person.efternavn;
                     klon.querySelector(".titel").textContent = person.titel;
                     klon.querySelector(".fødselsdag").textContent = person.fødselsdag;
 
