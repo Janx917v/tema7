@@ -35,6 +35,7 @@
             color: yellow;
             background-color: deeppink;
         }
+
     </style>
 
 </head>
@@ -101,7 +102,6 @@
 
         //funktion der viser personer i liste view
         function visPersoner() {
-
             const dest = document.querySelector("#liste"); // container til articles med en person
             const skabelon = document.querySelector("template").content; // select indhold af html skabelon (article)
             dest.textContent = ""; //ryd container inden ny loop
@@ -117,5 +117,8 @@
                 }
             })
         }
+
     </script>
-</body></html>
+</body>
+
+</html>
