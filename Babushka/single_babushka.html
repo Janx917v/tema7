@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-<<<<<<< HEAD
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+
     <style>
         * {
             box-sizing: border-box;
@@ -13,66 +15,623 @@
 
         img {
             max-width: 100%;
+            border: 2px solid whitesmoke;
+            border-radius: 30px;
+        }
+
+        body {
+            background-color: gainsboro;
+            margin: -1px;
+            background-image: url(baggrund_2.png);
+            object-fit: cover;
+        }
+
+        header {
+            text-align: center;
+            background-color: #00162a;
+            padding: 30px;
+            background-image: url(Skyline_white_logo.png);
+            background-position: 39.2% 10%;
+            background-size: auto;
+            height: 274px;
+        }
+
+        section {
+            background-color: whitesmoke;
+            text-align: center;
+            margin-top: -20px;
+        }
+
+        nav {
+            text-align: center;
+            padding-top: 2rem;
         }
 
         main {
-            padding: 10px;
+            padding: 50px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
             max-width: 1600px;
             margin: 0 auto;
         }
 
         article {
-            border: 3px solid yellow;
-            padding: 10px;
-        }
-
-        body {
-            background-color: gainsboro;
-        }
-
-        header,
-        nav {
+            border: 3px solid whitesmoke;
+            border-radius: 30px;
+            padding: 30px;
             text-align: center;
+            margin: 0 auto;
+
+            /*
+            background-color: rgb(248, 248, 255, 0.8);
+            background-color: rgba(35, 114, 183, 0.8);
+*/
+            background-color: rgba(203, 231, 255, 0.8);
+            max-width: 1000px;
         }
 
         footer {
+            font-family: 'Viaoda Libre', cursive;
             font-size: 2rem;
             text-align: center;
-            padding: 10px;
+            margin: 0 auto;
+            background-color: whitesmoke;
+            color: #00162a;
             /*border: 1px solid yellow;
             text-decoration: underline;
             text-decoration-color: yellow; */
         }
 
-        .valgt {
-            color: yellow;
-            background-color: deeppink;
+        button {
+            font-family: 'Viaoda Libre', cursive;
+            font-size: 1.5rem;
+            background-color: #00162a;
+            border-radius: 20px;
+            color: white;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            padding: 5px;
         }
 
+        h1 {
+            font-family: 'Viaoda Libre', cursive;
+            font-size: 4.8rem;
+            color: white;
+            text-decoration: underline
+        }
+
+        h2 {
+            font-family: 'Viaoda Libre', cursive;
+        }
+
+        h3 {
+            font-family: 'Viaoda Libre', cursive;
+            text-decoration: underline;
+            font-size: 1.8rem;
+            color: #00162a;
+        }
+
+        h4 {
+            color: #00162a;
+        }
+
+        p {
+            color: #00162a;
+        }
+
+        .valgt {
+            color: #00162a;
+            background-color: white;
+        }
+
+        #star1_container {
+            position: absolute;
+            top: 2vw;
+            left: 97vw;
+        }
+
+        #star1_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star2_container {
+            position: absolute;
+            top: 8vw;
+            left: 82vw;
+        }
+
+        #star2_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star3_container {
+            position: absolute;
+            top: 3vw;
+            left: 80vw;
+        }
+
+        #star3_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star4_container {
+            position: absolute;
+            top: 1vw;
+            left: 65.5vw;
+        }
+
+        #star4_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star5_container {
+            position: absolute;
+            top: 4vw;
+            left: 52.3vw;
+        }
+
+        #star5_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star6_container {
+            position: absolute;
+            top: 6vw;
+            left: 40vw;
+        }
+
+        #star6_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star7_container {
+            position: absolute;
+            top: 2vw;
+            left: 31vw;
+        }
+
+        #star7_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star8_container {
+            position: absolute;
+            top: 2vw;
+            left: 26vw;
+        }
+
+        #star8_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star9_container {
+            position: absolute;
+            top: 4vw;
+            left: 15vw;
+        }
+
+        #star9_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star10_container {
+            position: absolute;
+            top: 8vw;
+            left: 16vw;
+        }
+
+        #star10_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star11_container {
+            position: absolute;
+            top: 2vw;
+            left: 8vw;
+        }
+
+        #star11_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star12_container {
+            position: absolute;
+            top: 9vw;
+            left: 85vw;
+        }
+
+        #star12_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star13_container {
+            position: absolute;
+            top: 1vw;
+            left: 49vw;
+        }
+
+        #star13_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star14_container {
+            position: absolute;
+            top: 5vw;
+            left: 19vw;
+        }
+
+        #star14_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star15_container {
+            position: absolute;
+            top: 1vw;
+            left: 66vw;
+        }
+
+        #star15_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star16_container {
+            position: absolute;
+            top: 2vw;
+            left: 12vw;
+        }
+
+        #star16_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        .glow {
+            animation-name: glow_kf;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes glow_kf {
+            0% {
+                filter: drop-shadow(0px 0px 0px white) opacity(10%);
+            }
+
+            50% {
+                filter: drop-shadow(1px 1px 50px white);
+                transform: scale(1.5);
+            }
+
+            100% {
+                filter: drop-shadow(0px 0px 0px white) opacity(10%);
+            }
+        }
+
+
+        .stjerneskud_1 {
+            animation-name: stjerneskud_1_kf;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes stjerneskud_1_kf {
+            0% {
+                filter: drop-shadow(1px 1px 20px white) opacity(0%);
+
+            }
+
+            10% {
+                filter: drop-shadow(1px 1px 40px white) opacity(20%);
+                transform: translateX(-2vw) translateY(1vw) scale(0.3);
+            }
+
+            20% {
+                filter: drop-shadow(1px 1px 60px white) opacity(50%);
+                transform: translateX(-4vw) translateY(2vw) scale(0.4);
+            }
+
+            30% {
+                filter: drop-shadow(1px 1px 80px white) opacity(75%);
+                transform: translateX(-6vw) translateY(3vw) scale(0.6);
+            }
+
+            40% {
+                filter: drop-shadow(1px 1px 200px white) opacity(90%);
+                transform: translateX(-8vw) translateY(4vw) scale(0.8);
+            }
+
+            50% {
+                filter: drop-shadow(1px 1px 600px white) opacity(100%) blur(0.1vw);
+                transform: translateX(-10vw) translateY(5vw) scale(1);
+            }
+
+            51% {
+                filter: opacity(0%);
+            }
+
+            100% {
+                filter: opacity(0%);
+            }
+
+        }
+
+        .stjerneskud_2 {
+            animation-name: stjerneskud_2_kf;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 0.8s;
+        }
+
+        @keyframes stjerneskud_2_kf {
+            0% {
+                filter: drop-shadow(1px 1px 20px white) opacity(0%);
+
+            }
+
+            10% {
+                filter: drop-shadow(1px 1px 40px white) opacity(20%);
+                transform: translateX(1vw) translateY(1vw) scale(0.3);
+            }
+
+            20% {
+                filter: drop-shadow(1px 1px 60px white) opacity(50%);
+                transform: translateX(3vw) translateY(2vw) scale(0.4);
+            }
+
+            30% {
+                filter: drop-shadow(1px 1px 80px white) opacity(75%);
+                transform: translateX(5vw) translateY(3vw) scale(0.6);
+            }
+
+            40% {
+                filter: drop-shadow(1px 1px 200px white) opacity(90%);
+                transform: translateX(7vw) translateY(4vw) scale(0.8);
+            }
+
+            50% {
+                filter: drop-shadow(1px 1px 600px white) opacity(100%) blur(0.1vw);
+                transform: translateX(9vw) translateY(5vw) scale(1);
+            }
+
+            51% {
+                filter: opacity(0%);
+            }
+
+            100% {
+                filter: opacity(0%);
+            }
+
+        }
+
+        .stjerneskud_3 {
+            animation-name: stjerneskud_3_kf;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 1.1s;
+        }
+
+        @keyframes stjerneskud_3_kf {
+            0% {
+                filter: drop-shadow(1px 1px 20px white) opacity(0%);
+
+            }
+
+            10% {
+                filter: drop-shadow(1px 1px 40px white) opacity(20%);
+                transform: translateX(-2vw) translateY(2vw) scale(0.3);
+            }
+
+            20% {
+                filter: drop-shadow(1px 1px 60px white) opacity(50%);
+                transform: translateX(-4vw) translateY(4vw) scale(0.4);
+            }
+
+            30% {
+                filter: drop-shadow(1px 1px 80px white) opacity(75%);
+                transform: translateX(-6vw) translateY(6vw) scale(0.6);
+            }
+
+            40% {
+                filter: drop-shadow(1px 1px 200px white) opacity(90%);
+                transform: translateX(-8vw) translateY(8vw) scale(0.8);
+            }
+
+            50% {
+                filter: drop-shadow(1px 1px 600px white) opacity(100%) blur(0.1vw);
+                transform: translateX(-10vw) translateY(10vw) scale(1);
+            }
+
+            51% {
+                filter: opacity(0%);
+            }
+
+            100% {
+                filter: opacity(0%);
+            }
+
+        }
+
+        .stjerneskud_4 {
+            animation-name: stjerneskud_4_kf;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes stjerneskud_4_kf {
+            0% {
+                filter: drop-shadow(1px 1px 20px white) opacity(0%);
+
+            }
+
+            10% {
+                filter: drop-shadow(1px 1px 40px white) opacity(20%);
+                transform: translateX(1vw) translateY(1vw) scale(0.3);
+            }
+
+            20% {
+                filter: drop-shadow(1px 1px 60px white) opacity(50%);
+                transform: translateX(3vw) translateY(3vw) scale(0.4);
+            }
+
+            30% {
+                filter: drop-shadow(1px 1px 80px white) opacity(75%);
+                transform: translateX(5vw) translateY(5vw) scale(0.6);
+            }
+
+            40% {
+                filter: drop-shadow(1px 1px 200px white) opacity(90%);
+                transform: translateX(7vw) translateY(7vw) scale(0.8);
+            }
+
+            50% {
+                filter: drop-shadow(1px 1px 600px white) opacity(100%) blur(0.1vw);
+                transform: translateX(9vw) translateY(9vw) scale(1);
+            }
+
+            51% {
+                filter: opacity(0%);
+            }
+
+            100% {
+                filter: opacity(0%);
+            }
+
+        }
     </style>
-=======
-    <style></style>
->>>>>>> origin/main
 </head>
 
 <body>
     <header>
-<<<<<<< HEAD
-        <h1>Bistro Babushka</h1>
-        <p>Menukort</p>
-=======
-        <h1></h1>
->>>>>>> origin/main
+        <div id="star1_container">
+            <div id="star1_sprite" class="glow"></div>
+        </div>
+
+        <div id="star2_container">
+            <div id="star2_sprite" class="glow"></div>
+        </div>
+
+        <div id="star3_container">
+            <div id="star3_sprite" class="glow"></div>
+        </div>
+
+        <div id="star4_container">
+            <div id="star4_sprite" class="glow"></div>
+        </div>
+
+        <div id="star5_container">
+            <div id="star5_sprite" class="glow"></div>
+        </div>
+
+        <div id="star6_container">
+            <div id="star6_sprite" class="glow"></div>
+        </div>
+
+        <div id="star7_container">
+            <div id="star7_sprite" class="glow"></div>
+        </div>
+
+        <div id="star8_container">
+            <div id="star8_sprite" class="glow"></div>
+        </div>
+
+        <div id="star9_container">
+            <div id="star9_sprite" class="glow"></div>
+        </div>
+
+        <div id="star10_container">
+            <div id="star10_sprite" class="glow"></div>
+        </div>
+
+        <div id="star11_container">
+            <div id="star11_sprite" class="glow"></div>
+        </div>
+
+        <div id="star12_container">
+            <div id="star12_sprite" class="stjerneskud_1"></div>
+        </div>
+
+        <div id="star13_container">
+            <div id="star13_sprite" class="stjerneskud_3"></div>
+        </div>
+
+        <div id="star14_container">
+            <div id="star14_sprite" class="stjerneskud_2"></div>
+        </div>
+
+        <div id="star15_container">
+            <div id="star15_sprite" class="stjerneskud_4"></div>
+        </div>
+
+        <div id="star16_container">
+            <div id="star16_sprite" class="stjerneskud_3"></div>
+        </div>
     </header>
-    <article class="">
-        <h2 class="navn"></h2>
-        <img src="" alt="" class="billede">
-        <p class="beskrivelse"></p>
-        <button>Tilbage</button>
-    </article>
+    <section>
+        <h2>Velkommen til Bistro Babushka</h2>
+    </section>
+
+    <main>
+        <article>
+            <img src="" alt="" class="billede">
+            <h3 class="navn"></h3>
+            <p class="beskrivelse"></p>
+            <button>Tilbage</button>
+        </article>
+    </main>
+    <footer>Velbekomme</footer>
 
     <script>
         const urlParams = new URLSearchParams(window.location.search);
@@ -110,9 +669,6 @@
         function tilbageTilPersongalleri() {
             history.back();
         }
-
     </script>
 
-</body>
-
-</html>
+</body></html>
