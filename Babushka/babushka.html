@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
 
     <style>
         * {
@@ -13,154 +15,826 @@
 
         img {
             max-width: 100%;
-        }
-
-        main {
-            padding: 10px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-            gap: 20px;
-            max-width: 1600px;
-            margin: 0 auto;
-        }
-
-        article {
-            border: 3px solid yellow;
-            padding: 10px;
+            border: 2px solid #00162a;
+            border-radius: 30px;
         }
 
         body {
             background-color: gainsboro;
+            margin: -1px;
+            background-image: url(baggrund_2.png);
+            object-fit: cover;
         }
 
-        header,
+        header {
+            text-align: center;
+            background-color: #00162a;
+            padding: 30px;
+            background-image: url(Skyline_white_logo.png);
+            background-position: 39.2% 10%;
+            background-size: auto;
+            height: 274px;
+        }
+
+        section {
+            background-color: whitesmoke;
+            text-align: center;
+            margin-top: -20px;
+        }
+
         nav {
             text-align: center;
+            padding-top: 2rem;
         }
 
+
+
+        main {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+
+        article {
+            border: 3px solid #00162a;
+            border-radius: 30px;
+            padding: 30px;
+            text-align: center;
+            /*
+            background-color: rgb(248, 248, 255, 0.8);
+            background-color: rgba(35, 114, 183, 0.8);
+*/
+            background-color: rgba(203, 231, 255, 0.8);
+
+        }
+
+
         footer {
+            font-family: 'Viaoda Libre', cursive;
             font-size: 2rem;
             text-align: center;
-            padding: 10px;
+            margin: 0 auto;
+            background-color: whitesmoke;
+            color: #00162a;
             /*border: 1px solid yellow;
             text-decoration: underline;
             text-decoration-color: yellow; */
         }
 
+        button {
+            font-family: 'Viaoda Libre', cursive;
+            font-size: 1.5rem;
+            background-color: #00162a;
+            border-radius: 20px;
+            color: white;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            padding: 5px;
+        }
 
+        h1 {
+            font-family: 'Viaoda Libre', cursive;
+            font-size: 4.8rem;
+            color: white;
+            text-decoration: underline
+        }
 
-        /*h2,
+        h2 {
+            font-family: 'Viaoda Libre', cursive;
+        }
+
+        h3 {
+            font-family: 'Viaoda Libre', cursive;
+            text-decoration: underline;
+            font-size: 1.8rem;
+            color: #00162a;
+        }
+
+        h4 {
+            color: #00162a;
+        }
+
         p {
-            text-align: center
-        }*/
+            color: #00162a;
+        }
+
+        .valgt {
+            color: #00162a;
+            background-color: white;
+        }
+
+        #star1_container {
+            position: absolute;
+            top: 2vw;
+            left: 97vw;
+        }
+
+        #star1_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star2_container {
+            position: absolute;
+            top: 8vw;
+            left: 82vw;
+        }
+
+        #star2_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star3_container {
+            position: absolute;
+            top: 3vw;
+            left: 80vw;
+        }
+
+        #star3_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star4_container {
+            position: absolute;
+            top: 1vw;
+            left: 65.5vw;
+        }
+
+        #star4_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star5_container {
+            position: absolute;
+            top: 4vw;
+            left: 52.3vw;
+        }
+
+        #star5_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star6_container {
+            position: absolute;
+            top: 6vw;
+            left: 40vw;
+        }
+
+        #star6_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star7_container {
+            position: absolute;
+            top: 2vw;
+            left: 31vw;
+        }
+
+        #star7_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star8_container {
+            position: absolute;
+            top: 2vw;
+            left: 26vw;
+        }
+
+        #star8_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star9_container {
+            position: absolute;
+            top: 4vw;
+            left: 15vw;
+        }
+
+        #star9_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star10_container {
+            position: absolute;
+            top: 8vw;
+            left: 16vw;
+        }
+
+        #star10_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star11_container {
+            position: absolute;
+            top: 2vw;
+            left: 8vw;
+        }
+
+        #star11_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star12_container {
+            position: absolute;
+            top: 9vw;
+            left: 85vw;
+        }
+
+        #star12_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star13_container {
+            position: absolute;
+            top: 1vw;
+            left: 49vw;
+        }
+
+        #star13_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star14_container {
+            position: absolute;
+            top: 5vw;
+            left: 19vw;
+        }
+
+        #star14_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star15_container {
+            position: absolute;
+            top: 1vw;
+            left: 66vw;
+        }
+
+        #star15_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        #star16_container {
+            position: absolute;
+            top: 2vw;
+            left: 12vw;
+        }
+
+        #star16_sprite {
+            background-image: url(star.png);
+            background-size: cover;
+            width: 5px;
+            height: 5px;
+        }
+
+        .glow {
+            animation-name: glow_kf;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes glow_kf {
+            0% {
+                filter: drop-shadow(0px 0px 0px white) opacity(10%);
+            }
+
+            50% {
+                filter: drop-shadow(1px 1px 50px white);
+                transform: scale(1.5);
+            }
+
+            100% {
+                filter: drop-shadow(0px 0px 0px white) opacity(10%);
+            }
+        }
+
+
+        .stjerneskud_1 {
+            animation-name: stjerneskud_1_kf;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes stjerneskud_1_kf {
+            0% {
+                filter: drop-shadow(1px 1px 20px white) opacity(0%);
+
+            }
+
+            10% {
+                filter: drop-shadow(1px 1px 40px white) opacity(20%);
+                transform: translateX(-2vw) translateY(1vw) scale(0.3);
+            }
+
+            20% {
+                filter: drop-shadow(1px 1px 60px white) opacity(50%);
+                transform: translateX(-4vw) translateY(2vw) scale(0.4);
+            }
+
+            30% {
+                filter: drop-shadow(1px 1px 80px white) opacity(75%);
+                transform: translateX(-6vw) translateY(3vw) scale(0.6);
+            }
+
+            40% {
+                filter: drop-shadow(1px 1px 200px white) opacity(90%);
+                transform: translateX(-8vw) translateY(4vw) scale(0.8);
+            }
+
+            50% {
+                filter: drop-shadow(1px 1px 600px white) opacity(100%) blur(0.1vw);
+                transform: translateX(-10vw) translateY(5vw) scale(1);
+            }
+
+            51% {
+                filter: opacity(0%);
+            }
+
+            100% {
+                filter: opacity(0%);
+            }
+
+        }
+
+        .stjerneskud_2 {
+            animation-name: stjerneskud_2_kf;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 0.8s;
+        }
+
+        @keyframes stjerneskud_2_kf {
+            0% {
+                filter: drop-shadow(1px 1px 20px white) opacity(0%);
+
+            }
+
+            10% {
+                filter: drop-shadow(1px 1px 40px white) opacity(20%);
+                transform: translateX(1vw) translateY(1vw) scale(0.3);
+            }
+
+            20% {
+                filter: drop-shadow(1px 1px 60px white) opacity(50%);
+                transform: translateX(3vw) translateY(2vw) scale(0.4);
+            }
+
+            30% {
+                filter: drop-shadow(1px 1px 80px white) opacity(75%);
+                transform: translateX(5vw) translateY(3vw) scale(0.6);
+            }
+
+            40% {
+                filter: drop-shadow(1px 1px 200px white) opacity(90%);
+                transform: translateX(7vw) translateY(4vw) scale(0.8);
+            }
+
+            50% {
+                filter: drop-shadow(1px 1px 600px white) opacity(100%) blur(0.1vw);
+                transform: translateX(9vw) translateY(5vw) scale(1);
+            }
+
+            51% {
+                filter: opacity(0%);
+            }
+
+            100% {
+                filter: opacity(0%);
+            }
+
+        }
+
+        .stjerneskud_3 {
+            animation-name: stjerneskud_3_kf;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 1.1s;
+        }
+
+        @keyframes stjerneskud_3_kf {
+            0% {
+                filter: drop-shadow(1px 1px 20px white) opacity(0%);
+
+            }
+
+            10% {
+                filter: drop-shadow(1px 1px 40px white) opacity(20%);
+                transform: translateX(-2vw) translateY(2vw) scale(0.3);
+            }
+
+            20% {
+                filter: drop-shadow(1px 1px 60px white) opacity(50%);
+                transform: translateX(-4vw) translateY(4vw) scale(0.4);
+            }
+
+            30% {
+                filter: drop-shadow(1px 1px 80px white) opacity(75%);
+                transform: translateX(-6vw) translateY(6vw) scale(0.6);
+            }
+
+            40% {
+                filter: drop-shadow(1px 1px 200px white) opacity(90%);
+                transform: translateX(-8vw) translateY(8vw) scale(0.8);
+            }
+
+            50% {
+                filter: drop-shadow(1px 1px 600px white) opacity(100%) blur(0.1vw);
+                transform: translateX(-10vw) translateY(10vw) scale(1);
+            }
+
+            51% {
+                filter: opacity(0%);
+            }
+
+            100% {
+                filter: opacity(0%);
+            }
+
+        }
+
+        .stjerneskud_4 {
+            animation-name: stjerneskud_4_kf;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes stjerneskud_4_kf {
+            0% {
+                filter: drop-shadow(1px 1px 20px white) opacity(0%);
+
+            }
+
+            10% {
+                filter: drop-shadow(1px 1px 40px white) opacity(20%);
+                transform: translateX(1vw) translateY(1vw) scale(0.3);
+            }
+
+            20% {
+                filter: drop-shadow(1px 1px 60px white) opacity(50%);
+                transform: translateX(3vw) translateY(3vw) scale(0.4);
+            }
+
+            30% {
+                filter: drop-shadow(1px 1px 80px white) opacity(75%);
+                transform: translateX(5vw) translateY(5vw) scale(0.6);
+            }
+
+            40% {
+                filter: drop-shadow(1px 1px 200px white) opacity(90%);
+                transform: translateX(7vw) translateY(7vw) scale(0.8);
+            }
+
+            50% {
+                filter: drop-shadow(1px 1px 600px white) opacity(100%) blur(0.1vw);
+                transform: translateX(9vw) translateY(9vw) scale(1);
+            }
+
+            51% {
+                filter: opacity(0%);
+            }
+
+            100% {
+                filter: opacity(0%);
+            }
+
+        }
+
+        /*
+        .pulse {
+        animation-name: pulse_kf;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        }
+
+        @keyframes pulse_kf {
+        0% {
+        transform: scale(1);
+        }
+
+        25% {
+        transform: scale(1.1);
+        }
+
+        50% {
+        transform: scale(1);
+        }
+
+        75% {
+        transform: scale(0.9);
+        }
+
+        100% {
+        transform: scale(1);
+        }
+        }
+*/
     </style>
 
 </head>
 
 <body>
     <header>
-        <h1>Bistro Babushka</h1>
-        <nav>
-            <button data-kategori="alle" class="valgt">Alle</button>
-            <button data-kategori="forretter">Forretter</button>
-            <button data-kategori="hovedretter">Hovedretter</button>
-            <button data-kategori="desserter">Desserter</button>
-            <button data-kategori="sideorders">Sideorders</button>
-            <button data-kategori="drikkevarer">Drikkevarer</button>
-        </nav>
+        <h1></h1>
+        <div id="star1_container">
+            <div id="star1_sprite" class="glow"></div>
+        </div>
+
+        <div id="star2_container">
+            <div id="star2_sprite" class="glow"></div>
+        </div>
+
+        <div id="star3_container">
+            <div id="star3_sprite" class="glow"></div>
+        </div>
+
+        <div id="star4_container">
+            <div id="star4_sprite" class="glow"></div>
+        </div>
+
+        <div id="star5_container">
+            <div id="star5_sprite" class="glow"></div>
+        </div>
+
+        <div id="star6_container">
+            <div id="star6_sprite" class="glow"></div>
+        </div>
+
+        <div id="star7_container">
+            <div id="star7_sprite" class="glow"></div>
+        </div>
+
+        <div id="star8_container">
+            <div id="star8_sprite" class="glow"></div>
+        </div>
+
+        <div id="star9_container">
+            <div id="star9_sprite" class="glow"></div>
+        </div>
+
+        <div id="star10_container">
+            <div id="star10_sprite" class="glow"></div>
+        </div>
+
+        <div id="star11_container">
+            <div id="star11_sprite" class="glow"></div>
+        </div>
+
+        <div id="star12_container">
+            <div id="star12_sprite" class="stjerneskud_1"></div>
+        </div>
+
+        <div id="star13_container">
+            <div id="star13_sprite" class="stjerneskud_3"></div>
+        </div>
+
+        <div id="star14_container">
+            <div id="star14_sprite" class="stjerneskud_2"></div>
+        </div>
+
+        <div id="star15_container">
+            <div id="star15_sprite" class="stjerneskud_4"></div>
+        </div>
+
+        <div id="star16_container">
+            <div id="star16_sprite" class="stjerneskud_3"></div>
+        </div>
     </header>
+    <section>
+        <h2>Velkommen til Bistro Babushka</h2>
+    </section>
+    <nav>
+        <button data-kategori="alle" class="valgt">Alle</button>
+        <button data-kategori="forretter">Forretter</button>
+        <button data-kategori="hovedretter">Hovedretter</button>
+        <button data-kategori="desserter">Desserter</button>
+        <button data-kategori="sideorders">Sideorders</button>
+        <button data-kategori="drikkevarer">Drikkevarer</button>
+    </nav>
+
+
+
 
     <main id="liste"></main>
 
     <template>
-        <article>
+        <article class=baggrund>
             <img src="" alt="" class="billede">
-            <h2 class="navn"></h2>
-            <h3 class="oprindelsesregion"></h3>
+            <h3 class="navn"></h3>
+            <h4 class="oprindelsesregion"></h4>
             <p class="kategori"></p>
             <p class="kortbeskrivelse"></p>
             <p class="langbeskrivelse"></p>
             <p class="pris"></p>
-
         </article>
     </template>
+
+    <footer>Velbekomme</footer>
     <script>
-        const url = "https://babushka-dd8a.restdb.io/rest/menu";
-        const medieurl = "https://babushka-dd8a.restdb.io/media/";
-        const main = document.querySelector("main");
-        const template = document.querySelector("template").content;
-
-        const options = {
-            headers: {
-                'x-apikey': "600ec2fb1346a1524ff12de4"
-            }
-        }
-
         document.addEventListener("DOMContentLoaded", start);
         console.log("DOM er loaded");
 
-        let kategori;
+        const header = document.querySelector("section h2");
+        const url = "https://babushka-dd8a.restdb.io/rest/menu";
+        const medieurl = "https://babushka-dd8a.restdb.io/media/";
+
+        const myHeaders = {
+            "x-apikey": "600ec2fb1346a1524ff12de4"
+        }
+
+
+        let retter;
         let filter = "alle";
 
         function start() {
-            const filterknapper = document.querySelectorAll("nav button");
-            filterknapper.forEach(knap => knap.addEventListener("click", filtrerKategori));
-            hentData();
+            const filterKnapper = document.querySelectorAll("nav button");
+            filterKnapper.forEach(knap => knap.addEventListener("click", filtrerRetter));
+            loadJSON();
         }
 
-        function filtrerKategori() {
-            filter = this.dataset.kategori; //sæt variabel "filter" til værdien af data-troende på den knap der er klikket på.
+        function filtrerRetter() {
+            filter = this.dataset.kategori;
             document.querySelector(".valgt").classList.remove("valgt");
             this.classList.add("valgt");
-            visKategori(); //kald functionen "visPersoner" efter det nye filter er sat på
-            //header.textContent = this.textContent; //udskriver den valgte kategori i header i H1.
+            visRetter();
+            header.textContent = this.textContent;
+
         }
 
-        async function hentData() {
-            const respons = await fetch(url, options);
-            const json = await respons.json();
-            visKategori();
+        async function loadJSON() {
+            const JSONData = await fetch("https://babushka-dd8a.restdb.io/rest/menu", {
+                headers: myHeaders
+            });
+            retter = await JSONData.json();
+            console.log("Menu", retter);
+            visRetter();
         }
 
-        /*  function vis(json) {
-              console.log(json)
-              json.forEach(dish => {
-                  const klon = template.cloneNode(true);
-                  klon.querySelector(".billede").src = medieurl + dish.billede;
-                  klon.querySelector(".navn").textContent = dish.navn;
-                  klon.querySelector(".oprindelsesregion").textContent = dish.oprindelsesregion;
-                  klon.querySelector(".kategori").textContent = dish.kategori;
-                  klon.querySelector(".kortbeskrivelse").textContent = dish.kortbeskrivelse;
-                  klon.querySelector(".langbeskrivelse").textContent = dish.langbeskrivelse;
-                  klon.querySelector(".pris").textContent = dish.pris;
-
-                  main.appendChild(klon);
-
-              })
-          }*/
-        //funktion der viser retter i liste view
-
-        function visKategori() {
-            const dest = document.querySelector("#liste"); // container til articles med en person
-            const skabelon = document.querySelector("template").content; // select indhold af html skabelon (article)
-            dest.textContent = ""; //ryd container inden ny loop
-            kategori.forEach(kategori => {
-
-                // loop igennem json (personer)
-                // tjek hvilken tro personen har og sammenlign med aktuelt filter eller vis alle, hvis filter har værdien "alle"
-                if (filter == dish.kategori || filter == "alle") {
+        function visRetter() {
+            const main = document.querySelector("main");
+            const template = document.querySelector("template").content;
+            main.textContent = "";
+            console.log(visRetter);
+            retter.forEach(ret => {
+                if (filter == ret.kategori || filter == "alle") {
                     const klon = template.cloneNode(true);
-                    klon.querySelector(".billede").src = medieurl + dish.billede;
-                    klon.querySelector(".navn").textContent = kategori.navn;
-                    klon.querySelector(".oprindelsesregion").textContent = kategori.oprindelsesregion;
-                    klon.querySelector(".kategori").textContent = kategori.kategori;
-                    klon.querySelector(".kortbeskrivelse").textContent = kategori.kortbeskrivelse;
-                    klon.querySelector(".langbeskrivelse").textContent = kategori.langbeskrivelse;
-                    klon.querySelector(".pris").textContent = kategori.pris;
+                    klon.querySelector(".billede").src = medieurl + ret.billede[0];
+                    klon.querySelector(".navn").textContent = ret.navn;
+                    klon.querySelector(".pris").textContent = ret.pris + ",-";
+                    //klon.querySelector(".kategori").textContent = ret.kategori;
+                    klon.querySelector(".kortbeskrivelse").textContent = ret.kortbeskrivelse;
+                    //klon.querySelector(".langbeskrivelse").textContent = ret.langbeskrivelse;
+                    klon.querySelector(".oprindelsesregion").textContent = ret.oprindelsesregion;
+                    //Her skal der oprettes en knap som linker til detaljer om den enkelte ret
+                    klon.querySelector(".billede").addEventListener("click", () => visDetaljer(ret));
+                    main.appendChild(klon);
+
                 }
             })
-
-
         }
+
+        function visDetaljer(retten) {
+            location.href = `single_babushka.html?id=${retten._id}`;
+        }
+
+        //        const url = "https://babushka-dd8a.restdb.io/rest/menu";
+        //        const medieurl = "https://babushka-dd8a.restdb.io/media/";
+        //        const options = {
+        //            headers: {
+        //                'x-apikey': "600ec2fb1346a1524ff12de4"
+        //            }
+        //        }
+        //
+        //        const main = document.querySelector("main");
+        //        const template = document.querySelector("template").content;
+        //
+        //        document.addEventListener("DOMContentLoaded", start);
+        //        console.log("DOM er loaded");
+        //
+        //        let retter;
+        //        let filter = "alle";
+        //
+        //        function start() {
+        //            const filterknapper = document.querySelectorAll("nav button");
+        //            filterknapper.forEach(knap => knap.addEventListener("click", filtrerRetter));
+        //            loadJSON();
+        //        }
+        //
+        //
+        //        function filtrerRetter() {
+        //            filter = this.dataset.kategori; //sæt variabel "filter" til værdien af data-troende på den knap der er klikket på.
+        //            document.querySelector(".valgt").classList.remove("valgt");
+        //            this.classList.add("valgt");
+        //            visRetter(); //kald functionen "visPersoner" efter det nye filter er sat på
+        //            header.textContent = this.textContent; //udskriver den valgte kategori i header i H1.
+        //        }
+        //
+        //        async function loadJSON() {
+        //            const respons = await fetch(url, options);
+        //            const json = await respons.json();
+        //            visRetter();
+        //        }
+        //
+        //
+        //        function visRetter() {
+        //            const dest = document.querySelector("#liste"); // container til articles med en person
+        //            const skabelon = document.querySelector("template").content; // select indhold af html skabelon (article)
+        //            dest.textContent = ""; //ryd container inden ny loop
+        //            retter.forEach(kategori => {
+        //
+        //                // loop igennem json (personer)
+        //                // tjek hvilken tro personen har og sammenlign med aktuelt filter eller vis alle, hvis filter har værdien "alle"
+        //                if (filter == kategori || filter == "alle") {
+        //                    const klon = template.cloneNode(true);
+        //                    klon.querySelector(".billede").src = medieurl + kategori.billede;
+        //                    klon.querySelector(".navn").textContent = kategori.navn;
+        //                    klon.querySelector(".oprindelsesregion").textContent = kategori.oprindelsesregion;
+        //                    klon.querySelector(".kategori").textContent = kategori.kategori;
+        //                    klon.querySelector(".kortbeskrivelse").textContent = kategori.kortbeskrivelse;
+        //                    klon.querySelector(".langbeskrivelse").textContent = kategori.langbeskrivelse;
+        //                    klon.querySelector(".pris").textContent = kategori.pris;
+        //                }
+        //            })
+        //
+        //
+        //        }
+        //
+        //
+        //
+        //        function vis(json) {
+        //            console.log(json)
+        //            json.forEach(dish => {
+        //                const klon = template.cloneNode(true);
+        //                klon.querySelector(".billede").src = medieurl + dish.billede;
+        //                klon.querySelector(".navn").textContent = dish.navn;
+        //                klon.querySelector(".oprindelsesregion").textContent = dish.oprindelsesregion;
+        //                klon.querySelector(".kategori").textContent = dish.kategori;
+        //                klon.querySelector(".kortbeskrivelse").textContent = dish.kortbeskrivelse;
+        //                klon.querySelector(".langbeskrivelse").textContent = dish.langbeskrivelse;
+        //                klon.querySelector(".pris").textContent = dish.pris;
+        //
+        //                main.appendChild(klon);
+        //
+        //            })
+        //        }
+        //        //funktion der viser retter i liste view
     </script>
+    <!--Babushka dukken - et unikt stykke russisk historie
+En Babushka dukke er en russisk dukke af træ med en række mindre dukker indeni. Dukken er det russiske symbol på moderskab, frodighed, frugtbarhed og velstand og den mest anvendte gave til både voksne og børn, til fødselsdage og bryllupper, som barselsgave og housewarminggave.
+
+Måden at producere den på er grundlæggende den samme som for over 100 år siden. Skallerne er hånddrejede af det samme stykke træ og dukkerne er håndmalede. Derved bevares det unikke og særprægede ved dukken.-->
 </body></html>
